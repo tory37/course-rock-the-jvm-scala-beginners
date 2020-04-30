@@ -40,7 +40,7 @@ object Recursion extends App {
     @tailrec
     def tailFibonacci(current: Int, lastSum: BigInt, lastLastSum: BigInt): BigInt = {
       if (current == x) lastSum + lastLastSum
-      else tailFibonacci(x, current + 1, lastSum + lastLastSum, lastSum)
+      else tailFibonacci(current + 1, lastSum + lastLastSum, lastSum)
     }
 
     if (x <= 2) 1
